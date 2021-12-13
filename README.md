@@ -1,2 +1,6 @@
 # deeplearning
-深度学习代码
+首先使用gnt2png.py将gnt文件解码为png图片并得到字典char_dict，然后使用这个字典在compet_gnt2png.py文件中将竞赛数据集也解码出来。
+在my_dataset2.py文件中准备好训练集和测试集的dataset和dataloader
+使用的网络模型存放在my_resnet和my_resnet2中，都是resnet18但是my_resnet2会在每次卷积后使用BatchNormalization
+模型的训练和测试都在model.py文件中进行
+lib.py文件中设定了一些超参
